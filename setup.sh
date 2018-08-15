@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 #Three different lipid compositions
 #
@@ -9,6 +10,32 @@
 #All with OmpA membrane domain (1QJP)
 #and Anti-GFP nanobody camelid single chain (3OGO)
 
+# User friendly ask for input
+continue=0
+while [[ $continue == 0 ]]
+do
+	echo "This script will automatically download all the required files and tools needed to simulate the Vilnius 2018 iGEM team's system"
+	echo "Proceed? [Y/n]"
+	ans=''
+	read ans
+	case $ans in
+		y|Y)
+			#Continue
+			continue=1
+			;;
+		n|N)
+			#Quit
+			exit 0
+			;;
+		*)
+			echo "Unknown input please try again"
+			;;
+	esac
+done
+
+# Define some global variables
+SETUP_ROOT=$(pwd)
+
 # Test for gromacs
 which gmx &> /dev/null
 if [[ $? -ne 0 ]]
@@ -18,10 +45,10 @@ then
 	exit 1
 fi
 
-# Define some global variables
-SETUP_ROOT=$(pwd)
-
 # Fetch structures
 source scripts/fetch_structures.sh
 
-sudo ./install_martinize.sh
+# Get tools
+source scripts/get_tools.sh
+
+
