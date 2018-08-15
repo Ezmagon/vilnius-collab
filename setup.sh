@@ -9,4 +9,10 @@
 #All with OmpA membrane domain (1QJP)
 #and Anti-GFP nanobody camelid single chain (3OGO)
 
+# Define some global variables
+SETUP_ROOT=$(pwd)
+
+# Fetch structures
+source scripts/fetch_structures.sh
+
 sudo ./install_martinize.sh
