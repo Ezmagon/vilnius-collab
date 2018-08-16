@@ -53,6 +53,9 @@ then
 	exit 1
 fi
 
+# Create folders if necessary
+mkdir -p ./source ./source/ndx ./source/mdp ./source/gro ./source/top ./source/temp ./source/itp ./structures ./md ./md/nvt ./md/md ./md/npt ./md/em ./tools ./scripts 
+
 # Fetch structures
 source scripts/fetch_structures.sh
 
