@@ -1,6 +1,7 @@
 cd $SETUP_ROOT
 cd tools
-sudo ./install_martinize.sh
+./install_martinize.sh
 wait
-wget http://cgmartini.nl/images/tools/insane/insane.py
+wget -nc http://cgmartini.nl/images/tools/insane/insane.py
+chmod +x insane.py
 cd $SETUP_ROOT
