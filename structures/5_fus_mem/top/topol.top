@@ -1,0 +1,41 @@
+#include "martini.itp"
+#include "lipids.itp"
+#include "ions.itp"
+
+#define RUBBER_BANDS
+
+#include "Protein_A.itp"
+#include "Protein_C.itp"
+
+[ system ]
+; name
+Insanely solvated protein.
+
+[ molecules ]
+; name  number
+Protein_A        1
+; X: 14.000 (18 bins) Y: 14.000 (18 bins) in upper leaflet
+; X: 14.000 (18 bins) Y: 14.000 (18 bins) in lower leaflet
+; 303 lipids in upper leaflet, 311 lipids in lower leaflet
+; NDX Solute 1 605
+; Charge of protein: 2.000000
+; NDX Membrane 606 7973
+; Charge of membrane: 0.000000
+; Total charge: 2.000000
+; NDX Solvent 7974 0
+; NDX System 1 7973
+; "I mean, the good stuff is just INSANE" --Julia Ormond
+DOPC           303
+DOPC           311
+Protein_C	1
+; NDX Solute 1 8487
+; Charge of protein: -5.000000
+; NDX Membrane 8488 0
+; Charge of membrane: 0.000000
+; Total charge: -5.000000
+; NDX Solvent 8488 23090
+; NDX System 1 23090
+; "I mean, the good stuff is just INSANE" --Julia Ormond
+W           14282
+NA               163
+CL               158

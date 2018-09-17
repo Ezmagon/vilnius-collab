@@ -1,0 +1,286 @@
+                      :-) GROMACS - gmx mdrun, 2018.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.2
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /home/matthijs/Documents/IGEM/vilnius_collab/structures/fus_mem/em
+Command line:
+  gmx mdrun -s em.tpr -deffnm em
+
+
+Back Off! I just backed up em.log to ./#em.log.2#
+Reading file em.tpr, VERSION 2018.2 (single precision)
+Multiple energy groups is not implemented for GPUs, falling back to the CPU. For better performance, run on the GPU without energy groups and then do gmx mdrun -rerun option on the trajectory with an energy group .tpr file.
+
+Using 1 MPI thread
+Using 4 OpenMP threads 
+
+
+Back Off! I just backed up em.trr to ./#em.trr.2#
+
+Back Off! I just backed up em.edr to ./#em.edr.2#
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         2000
+
+Step 148, time 4.44 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000617, max 0.010112 (between atoms 244 and 246)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+    244    246   33.4    0.2695   0.2727      0.2700
+    245    246   30.8    0.2708   0.2690      0.2700
+
+Step 151, time 4.53 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000819, max 0.014074 (between atoms 126 and 127)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+    125    126   35.5    0.2698   0.2691      0.2700
+    126    127   35.1    0.2700   0.2738      0.2700
+
+Step 153, time 4.59 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000981, max 0.013818 (between atoms 125 and 127)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+    125    127   31.3    0.2697   0.2737      0.2700
+    126    127   39.1    0.2674   0.2693      0.2700
+
+Step 155, time 4.65 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000756, max 0.010516 (between atoms 125 and 127)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+    125    127   33.8    0.2702   0.2728      0.2700
+
+Step 156, time 4.68 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000758, max 0.011951 (between atoms 126 and 127)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+    125    127   30.2    0.2728   0.2683      0.2700
+    126    127   31.0    0.2679   0.2732      0.2700
+
+Step 162, time 4.86 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.003046, max 0.036290 (between atoms 8156 and 8159)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+    125    126   45.8    0.2700   0.2694      0.2700
+
+Step 174, time 5.22 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.004812, max 0.064505 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   34.8    0.3042   0.3300      0.3100
+   8152   8156   34.2    0.3085   0.3049      0.3100
+   8156   8159   31.0    0.3207   0.2956      0.3100
+
+Step 176, time 5.28 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.001607, max 0.020550 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 182, time 5.46 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.003724, max 0.040892 (between atoms 8156 and 8159)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8156   8159   30.4    0.3127   0.2973      0.3100
+
+Step 187, time 5.61 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.003983, max 0.047562 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8152   8156   30.7    0.3121   0.2953      0.3100
+
+Step 197, time 5.91 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.005583, max 0.058465 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   30.5    0.3081   0.3250      0.3100
+   8152   8156   35.1    0.3117   0.2919      0.3100
+   8156   8159   31.3    0.3149   0.2930      0.3100
+
+Step 202, time 6.06 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.006802, max 0.071507 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   32.2    0.3081   0.3283      0.3100
+   8152   8156   36.5    0.3122   0.2878      0.3100
+   8156   8159   33.8    0.3152   0.2895      0.3100
+
+Step 207, time 6.21 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.007583, max 0.082009 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   33.0    0.3081   0.3296      0.3100
+   8152   8156   38.6    0.3126   0.2846      0.3100
+   8156   8159   35.2    0.3157   0.2874      0.3100
+
+Step 216, time 6.48 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.004212, max 0.043537 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8152   8156   32.7    0.3125   0.2965      0.3100
+
+Step 230, time 6.9 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.003283, max 0.038284 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 245, time 7.35 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.005747, max 0.057643 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   32.6    0.3076   0.3279      0.3100
+   8152   8156   34.2    0.3105   0.2932      0.3100
+   8156   8159   30.8    0.3151   0.2924      0.3100
+
+Step 250, time 7.5 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.006646, max 0.067770 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   34.3    0.3075   0.3310      0.3100
+   8152   8156   35.6    0.3108   0.2907      0.3100
+   8156   8159   32.3    0.3156   0.2899      0.3100
+
+Step 255, time 7.65 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.007262, max 0.075652 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   35.5    0.3072   0.3335      0.3100
+   8152   8156   36.7    0.3108   0.2892      0.3100
+   8156   8159   33.2    0.3163   0.2883      0.3100
+
+Step 260, time 7.8 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.006642, max 0.075232 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   35.6    0.3065   0.3333      0.3100
+   8152   8156   35.3    0.3101   0.2934      0.3100
+   8156   8159   32.1    0.3173   0.2900      0.3100
+
+Step 264, time 7.92 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.003421, max 0.037927 (between atoms 8156 and 8159)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 273, time 8.19 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.002959, max 0.031604 (between atoms 8156 and 8159)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 278, time 8.34 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.003111, max 0.033686 (between atoms 8152 and 8156)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 293, time 8.79 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.004053, max 0.046995 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   31.4    0.3069   0.3246      0.3100
+   8152   8156   30.4    0.3091   0.3018      0.3100
+
+Step 297, time 8.91 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.002804, max 0.028682 (between atoms 8156 and 8159)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 303, time 9.09 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.006612, max 0.072512 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   35.6    0.3067   0.3325      0.3100
+   8152   8156   35.2    0.3095   0.2927      0.3100
+   8156   8159   31.5    0.3165   0.2895      0.3100
+
+Step 308, time 9.24 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.003661, max 0.048389 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   33.0    0.3052   0.3250      0.3100
+   8152   8156   31.7    0.3076   0.3077      0.3100
+
+Step 341, time 10.23 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.004172, max 0.048495 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   32.0    0.3070   0.3250      0.3100
+   8152   8156   30.6    0.3089   0.3017      0.3100
+
+Step 345, time 10.35 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.002689, max 0.028167 (between atoms 8156 and 8159)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 356, time 10.68 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.005379, max 0.065106 (between atoms 8148 and 8152)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+   8148   8152   35.2    0.3059   0.3302      0.3100
+   8152   8156   33.3    0.3082   0.3000      0.3100
+
+Energy minimization reached the maximum number of steps before the forces
+reached the requested precision Fmax < 10.
+
+writing lowest energy coordinates.
+
+Back Off! I just backed up em.gro to ./#em.gro.2#
+
+Steepest Descents did not converge to Fmax < 10 in 2001 steps.
+Potential Energy  = -6.2032906e+05
+Maximum force     =  3.5539371e+02 on atom 8156
+Norm of force     =  4.9394353e+00
+
+GROMACS reminds you: "I'll Master Your Language, and In the Meantime I'll Create My Own" (Tricky)
+
